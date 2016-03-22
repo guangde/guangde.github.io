@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+.all_box{ border-bottom:1px #ebebeb solid; }
+.all_left{}
+.all_left img{ width:42px; height:42px;}
+.all_right{ padding-left:10px;width:80%;}
+.all_right p{ font-size:1.6rem; color:#000; padding-top:10px; margin-bottom:0; line-height:1.9rem;}
+.all_right h2{ font-size:1.6rem; color:#586b93; padding-top:3px;}
+.friend_img{ width:30.4375%;margin-right:5px;}
+.friend_img img{ width:100%; }
+.icon_img span{padding-right:5px;}
+.friend_vip{background:#f3f3f5;}
+.friend_vipp{padding-left:10px;}
+.morestyle{padding:5px 0;}
+.exampleImg { cursor:pointer;}
+.close {
+    width: 100%;   
+    max-height: 135px;
+    overflow: hidden; 
+}
+.goods_txtmore {
+    text-align: center;
+    color: #9a9aa0;
+    font-size: 14px;
+    background: #fff;
+    display: block;
+}
+.commentw{position:relative;padding-top:8px;margin-top:10px;}
+.comment{background:#f3f3f5;padding:6px 7px;}
+.comment p{font-size:1.4rem;line-height:1.9rem;padding-top:0px;margin-bottom:4px;}
+.comment p span{color:#586b93;}
+.friend_time{font-size:1.3rem;color:#949494;font-weight:normal; margin-top:5px;}
+.arrow-up{width:0; height:0; border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:8px solid #f3f3f5;position:absolute;top:0;left:10px;}
+
+/*banner*/
+.banner_h2{ font-size:1.7rem; color:#fff;position:absolute; bottom:14px; right:107px; text-align:right; font-family:"黑体";}
+.banner_w{ padding-bottom:48px;}
+.banner{ background:#464646; width:100%; height:320px;position:relative; }
+.banner span{ display:block; border:1px #ced0cf solid; width:72px; height:72px; position:absolute;z-index:11; bottom:-24px; right:10px;}
+.banner_tx{ width:70px; height:70px; border:2px #fff solid;}
+
+/*banner*/
