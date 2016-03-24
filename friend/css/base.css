@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+/*common style*/
+html {font-size: 62.5%;}
+.fs12{ font-size:12px;}
+body{ background:#ffffff; font-family:"微软雅黑"; font-size:.28em;}
+*{margin:0;padding:0;}
+.mt11{ padding-top:11px; overflow:hidden;}
+.mt12{ margin:12px 0 0 0; }
+.mb4{ margin-bottom:4px;}
+.fl{ float:left;}
+.fr{ float:left;}
+.ov{ overflow:hidden;}
+/*.pt15{ padding-top:15px;}*/
+.pt35{ padding-top:35px;}
+.pt51{ padding-top:51px;}
+.pt12{ padding-top:12px;}
+/*.pt8{ padding-top:8px;}*/
+.pd6{padding:6px 6px 2px 6px;}
+.color_c{ color:#ccc;font-size:12px;}
+/*.pb16{ padding-bottom:16px;}*/
+.all_m{width:94.375%; margin:15px auto 0px;}
+h1, h2, h3, h4, h5, h6{margin-top:0; margin-bottom:0;}
+
+@media screen and (max-width:1200px){
+	.all_right{ width:83%;}
+	.close {   
+     max-height: 110px;
+    }
+}
+@media screen and (max-width:640px){
+	.all_right{ width:80%;}
+
+	.close {   
+		 max-height: 143px;	
+		}
+}
+.mui-bar{
+    background-color:#2a2927;
+}
+.mui-title{
+    color: #ffffff;
+}
+.mui-bar-nav{
+    -webkit-box-shadow: 0 1px 6px #2a2927;
+    box-shadow: 0 1px 6px #2a2927;
+}
+
+/*common style*/

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>演唱会现场朋友圈</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="css/mui.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/pullrefresh_with_tab.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/base.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/pull-down.css">
+</head>
+<script>
+    document.addEventListener('touchmove', function (e) {
+        e.preventDefault();
+    }, false);
+    document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(loaded, 2000);
+    }, false);
+</script>
+<body>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-icon mui-icon-back mui-pull-left " style="color: #ffffff;"></a>
+    <a id="info" onclick="issue_on()" class="mui-pull-right" style="width: 40px;height: 40px;">
+        <img src="imgs/camera.png" style="width:70%;height: 70%;margin: 8px 5px;" alt=""/>
+    </a>
+
+    <h1 class="mui-title">演唱会朋友圈</h1>
+</header>
+
+<div id="wrapper">
+    <div id="scroller">
+        <div id="pullDown">
+            <span class="pullDownIcon"></span><span class="pullDownLabel"></span>
+        </div>
+        <div>
+            <div class="banner">
+                <h2 class="fr banner_h2">小英</h2>
+                <span><img src="images/tx.jpg" class="banner_tx fr"/></span>
+            </div>
+            <div class="ov pt51">
+                <div class="ov pb16 all_box pt15">
+                    <div class="all_m ov">
+                        <div class="fl all_left">
+                            <img src="images/tx.jpg"/>
+                        </div>
+                        <div class="fl all_right">
+                            <h2>伤心童话</h2>
+
+                            <p>第一张是胜利刚刚更新，第2张图是往期叠罗汉，多少年过去了，只能说bigbang is vip 初心不变</p>
+
+                            <div class="ov pt12">
+                                <div class="friend_img fl"><img data-preview-src="" data-preview-group="1" src="images/img1.jpg"/>
+                                </div>
+                                <div class="friend_img fl"><img data-preview-src="" data-preview-group="1" src="images/img2.jpg"/>
+                                </div>
+                            </div>
+                            <h3 class="friend_time">昨天</h3>
+
+                            <div class="ov pt8 icon_img" style="margin-top: -22px;">
+                                    <a class="popover_c" onclick="popover_set(this)" href="#"><img src="imgs/icon-c.png" alt="" style="float: right;width: 10%;margin: 10px 0px;"/></a>
+                                <div class="popover_o" style="background-color:#2a2927;width: 180px;height: 40px;margin: 0 50px;border-radius: 3px;opacity: 0">
+                                    <a href="#" onclick="support_set(this)" style="float:left;width: 90px; margin-top: 10px;text-align: center"><img src="imgs/support.png" alt="" style="width: 20%;margin: 3px 0;"/><span style="font-size: 15px;vertical-align: top;margin-left: 5px;color: #ffffff">赞</span></a>
+                                    <a href="#" onclick="comment_set(this)" style="margin-left: 10px"><img src="imgs/comment.png" alt="" style="width: 10%;margin: 12px 0;"/><span style="font-size: 15px;vertical-align: 14px;margin-left: 5px;color:#ffffff;">评论</span></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="ov pb16 all_box pt15">
+                    <div class="all_m ov">
+                        <div class="fl all_left">
+                            <img src="images/tx2.jpg"/>
+                        </div>
+                        <div class="fl all_right">
+                            <h2>IME娱乐集团</h2>
+
+                            <div class="close" id="more1">
+                                <p>2016 BIGBANG MADE [V.I.P] TOUR 巡回演出即将启航，首批曝光城市：深圳、郑州、南京、合肥、杭州、南昌、长沙。IME娱乐集团将与YG
+                                    Entertainment /
+                                    Live Nation Korea 携手启航，聚力再创辉煌。演出相关具体信息，请关注主办@IME娱乐</p>
+                            </div>
+                            <a onclick="more()" class="ov" style="width:100%;display:block;">
+                                <section class="fs15 fr morestyle ov">
+                                    <div class="goods_txtmore" id="more2">
+                                        全文
+                                    </div>
+                                </section>
+                            </a>
+
+                            <div class="ov pt12">
+                                <div class="friend_img fl">
+                                    <img data-preview-src="" data-preview-group="1" src="images/img3.jpg"/>
+                                </div>
+                                <div class="friend_img fl">
+                                    <img data-preview-src="" data-preview-group="1" src="images/img4.jpg"/>
+                                </div>
+                                <div class="friend_img fl">
+                                    <img data-preview-src="" data-preview-group="1" src="images/img5.jpg"/>
+                                </div>
+                            </div>
+
+                            <h3 class="friend_time">2小时前</h3>
+
+
+                            <div class="ov pt8 icon_img" style="margin-top: -22px;">
+                                <a class="popover_c" onclick="popover_set(this)" href="#"><img src="imgs/icon-c.png" alt="" style="float: right;width: 10%;margin: 10px 0px;"/></a>
+                                <div class="popover_o" style="background-color:#2a2927;width: 180px;height: 40px;margin: 0 50px;border-radius: 3px;opacity: 0">
+                                    <a href="#" onclick="support_set(this)" style="float:left;width: 90px; margin-top: 10px;text-align: center"><img src="imgs/support.png" alt="" style="width: 20%;margin: 3px 0;"/><span style="font-size: 15px;vertical-align: top;margin-left: 5px;color: #ffffff">赞</span></a>
+                                    <a href="#" onclick="comment_set(this)" style="margin-left: 10px"><img src="imgs/comment.png" alt="" style="width: 10%;margin: 12px 0;"/><span style="font-size: 15px;vertical-align: 14px;margin-left: 5px;color:#ffffff;">评论</span></a>
+                                </div>
+                            </div>
+                            <div class="ov commentw">
+                                <div style=" border-bottom: 1px #ebebeb solid;">
+                                    <i class="arrow-up"></i>
+                                    <div class="comment ov">
+                                        <img src="imgs/heart.png" style="vertical-align: 10px;width: 6%;"/>
+                                        <img src="images/tx.jpg" style="width: 42px;height: 42px;margin: 0 5px"/>
+                                    </div>
+                                </div>
+                                <i class="arrow-up"></i>
+
+                                <div class="comment ov">
+                                    <p><span>请不要告诉别人我叫小美女0谢谢0：</span>长沙演唱会的主办方难道真的就不管了吗</p>
+
+                                    <p><span>权妖孽有你的时光美好：</span>八月都努力和五月一样热情打榜投票吧，毕竟再等到爆炸回归又不知道得过几年？VIP们要珍惜啊，好不容
+                                        易盼到的回归[泪]看到欧巴为了我们有多累啊！！所以不要懒着了刷油管，让多拿一位多拿奖就是对他们最好的回报。</p>
+
+                                    <p><span> LeeHowl：</span>数胜利的眼睫毛[可爱]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ov pb16 all_box pt15">
+                    <div class="all_m ov">
+                        <div class="fl all_left">
+                            <img src="images/tx3.jpg"/>
+                        </div>
+                        <div class="fl all_right">
+                            <h2>中国V.I.P站</h2>
+
+                            <div class="ov mt12 friend_vip">
+                                <div class="pd6 ov">
+                                    <div class="fl">
+                                        <img src="images/tx3.jpg" width="40" height="40"/>
+                                    </div>
+                                    <p class="fl friend_vipp">十分感谢被邀请......</p>
+
+                                </div>
+                            </div>
+                            <h3 class="friend_time">2天前</h3>
+
+                                <div class="ov pt8 icon_img" style="margin-top: -22px;">
+                                    <a class="popover_c" onclick="popover_set(this)" href="#"><img src="imgs/icon-c.png" alt="" style="float: right;width: 10%;margin: 10px 0px;"/></a>
+                                    <div class="popover_o" style="background-color:#2a2927;width: 180px;height: 40px;margin: 0 50px;border-radius: 3px;opacity: 0">
+                                        <a href="#" onclick="support_set(this)" style="float:left;width: 90px; margin-top: 10px;text-align: center"><img src="imgs/support.png" alt="" style="width: 20%;margin: 3px 0;"/><span style="font-size: 15px;vertical-align: top;margin-left: 5px;color: #ffffff">赞</span></a>
+                                        <a href="#" onclick="comment_set(this)" style="margin-left: 10px"><img src="imgs/comment.png" alt="" style="width: 10%;margin: 12px 0;"/><span style="font-size: 15px;vertical-align: 14px;margin-left: 5px;color:#ffffff;">评论</span></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ov pb16 all_box pt15">
+                    <div class="all_m ov">
+                        <div class="fl all_left">
+                            <img src="images/tx4.jpg"/>
+                        </div>
+                        <div class="fl all_right">
+                            <h2>細紋仔玩泥沙</h2>
+
+                            <div class="ov mt12 friend_vip">
+                                <div class="pd6 ov">
+                                    <div class="fl">
+                                        <img src="images/tx4.jpg" width="40" height="40"/>
+                                    </div>
+                                    <p class="fl friend_vipp">十分感谢被邀请台的这</p>
+
+                                </div>
+                            </div>
+                            <h3 class="friend_time">8小时前</h3>
+
+                                <div class="ov pt8 icon_img" style="margin-top: -22px;">
+                                    <a class="popover_c" onclick="popover_set(this)" href="#"><img src="imgs/icon-c.png" alt="" style="float: right;width: 10%;margin: 10px 0px;"/></a>
+                                    <div class="popover_o" style="background-color:#2a2927;width: 180px;height: 40px;margin: 0 50px;border-radius: 3px;opacity: 0">
+                                        <a href="#" onclick="support_set(this)" style="float:left;width: 90px; margin-top: 10px;text-align: center"><img src="imgs/support.png" alt="" style="width: 20%;margin: 3px 0;"/><span style="font-size: 15px;vertical-align: top;margin-left: 5px;color: #ffffff">赞</span></a>
+                                        <a href="#" onclick="comment_set(this)" style="margin-left: 10px"><img src="imgs/comment.png" alt="" style="width: 10%;margin: 12px 0;"/><span style="font-size: 15px;vertical-align: 14px;margin-left: 5px;color:#ffffff;">评论</span></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <!--recommend-->
+                <div class="recommend">
+                    <h2 class="recommend_h2">推荐使用</h2>
+                    <div id="slider" class="mui-slider mui-fullscreen">
+                        <div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                            <div class="mui-scroll">
+                                <a class="mui-control-item mui-active" href="#item1mobile">
+                                    <img src="images/recommend1.jpg" width="280" height="279" >
+                                </a>
+                                <a class="mui-control-item" href="#item2mobile">
+                                    <img src="images/recommend2.jpg"  width="280" height="279" >
+                                </a>
+                                <a class="mui-control-item" href="#item3mobile" >
+                                    <img src="images/recommend3.jpg" width="280" height="279" >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--recommend-->
+                <div class="ov pb16 all_box pt15">
+                    <div class="all_m ov">
+                        <div class="fl all_left">
+                            <img src="images/tx5.jpg"/>
+                        </div>
+                        <div class="fl all_right">
+                            <h2>
+                                邂逅幸福198403</h2>
+
+                            <p>
+                                上海、深圳、郑州、南京、合肥、杭州、南昌、长沙的VIP们，你们准备好了吗？从首场上海开始，三月BIGBANG将与你们不见不散！让我们一起点亮皇冠灯，期待这场属于BIGBANG与VIP的美丽约会吧！演出更多资讯请关注主办方</p>
+
+                            <div class="ov pt12">
+                                <div class="friend_img fl"><img data-preview-src="" data-preview-group="1" src="images/img6.jpg"/></a>
+                                </div>
+                                <div class="friend_img fl"><img data-preview-src="" data-preview-group="1" src="images/img7.jpg"/></a>
+                                </div>
+                                <div class="friend_img fl"><img data-preview-src="" data-preview-group="1" src="images/img8.jpg"/></a>
+                                </div>
+                                <div class="friend_img fl"><img data-preview-src="" data-preview-group="1" src="images/img9.jpg"/></a>
+                                </div>
+                                <div class="friend_img fl"><img data-preview-src="" data-preview-group="1" src="images/img10.jpg"/>
+                                </div>
+                            </div>
+                            <h3 class="friend_time">昨天</h3>
+
+                                <div class="ov pt8 icon_img" style="margin-top: -22px;">
+                                    <a class="popover_c" onclick="popover_set(this)" href="#"><img src="imgs/icon-c.png" alt="" style="float: right;width: 10%;margin: 10px 0px;"/></a>
+                                    <div class="popover_o" style="background-color:#2a2927;width: 180px;height: 40px;margin: 0 50px;border-radius: 3px;opacity: 0">
+                                        <a href="#" onclick="support_set(this)" style="float:left;width: 90px; margin-top: 10px;text-align: center"><img src="imgs/support.png" alt="" style="width: 20%;margin: 3px 0;"/><span style="font-size: 15px;vertical-align: top;margin-left: 5px;color: #ffffff">赞</span></a>
+                                        <a href="#" onclick="comment_set(this)" style="margin-left: 10px"><img src="imgs/comment.png" alt="" style="width: 10%;margin: 12px 0;"/><span style="font-size: 15px;vertical-align: 14px;margin-left: 5px;color:#ffffff;">评论</span></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ov pb16 all_box pt15">
+                    <div class="all_m ov">
+                        <div class="fl all_left">
+                            <img src="images/tx6.jpg"/>
+                        </div>
+                        <div class="fl all_right">
+                            <h2>
+                                空寂VS硝烟</h2>
+
+                            <p>由于种种原因，原本计划在8月16日举办的延吉场演唱会被取消，在此告知各位粉丝朋友。对于一直以来期待此次演
+                                出的粉丝朋友们表示衷心的抱歉，并希望在不久的将来能有机会与大家见面。其余中国地区的巡演场次会照常进行。</p>
+
+                            <div class="ov pt12">
+                                <div class="friend_img fl"><img data-preview-src="" data-preview-group="1" src="images/img11.jpg"/>
+                                </div>
+                                <div class="friend_img fl"><img data-preview-src="" data-preview-group="1" src="images/img12.jpg"/>
+                                </div>
+                                <div class="friend_img fl"><img data-preview-src="" data-preview-group="1" src="images/img13.jpg"/>
+                                </div>
+                            </div>
+                            <h3 class="friend_time">昨天</h3>
+
+                                <div class="ov pt8 icon_img" style="margin-top: -22px;">
+                                    <a class="popover_c" onclick="popover_set(this)" href="#"><img src="imgs/icon-c.png" alt="" style="float: right;width: 10%;margin: 10px 0px;"/></a>
+                                    <div class="popover_o" style="background-color:#2a2927;width: 180px;height: 40px;margin: 0 50px;border-radius: 3px;opacity: 0">
+                                        <a href="#" onclick="support_set(this)" style="float:left;width: 90px; margin-top: 10px;text-align: center"><img src="imgs/support.png" alt="" style="width: 20%;margin: 3px 0;"/><span style="font-size: 15px;vertical-align: top;margin-left: 5px;color: #ffffff">赞</span></a>
+                                        <a href="#" onclick="comment_set(this)" style="margin-left: 10px"><img src="imgs/comment.png" alt="" style="width: 10%;margin: 12px 0;"/><span style="font-size: 15px;vertical-align: 14px;margin-left: 5px;color:#ffffff;">评论</span></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ov pb16 all_box pt15">
+                    <div class="all_m ov">
+                        <div class="fl all_left">
+                            <img src="images/tx7.jpg"/>
+                        </div>
+                        <div class="fl all_right">
+                            <h2>最喜欢你ovo</h2>
+
+                            <p>中国巡演启航。南京站将于3月19日在“南京奥体中心体育馆”进行。</p>
+
+                            <div class="ov mt12 friend_vip">
+                                <div class="pd6 ov">
+                                    <div class="fl">
+                                        <img src="images/tx7.jpg" width="40" height="40"/>
+                                    </div>
+                                    <p class="fl friend_vipp">十分感谢被邀请台的这</p>
+
+                                </div>
+                            </div>
+                            <h3 class="friend_time">2天前</h3>
+
+                                <div class="ov pt8 icon_img" style="margin-top: -22px;">
+                                    <a class="popover_c" onclick="popover_set(this)" href="#"><img src="imgs/icon-c.png" alt="" style="float: right;width: 10%;margin: 10px 0px;"/></a>
+                                    <div class="popover_o" style="background-color:#2a2927;width: 180px;height: 40px;margin: 0 50px;border-radius: 3px;opacity: 0">
+                                        <a href="#" onclick="support_set(this)" style="float:left;width: 90px; margin-top: 10px;text-align: center"><img src="imgs/support.png" alt="" style="width: 20%;margin: 3px 0;"/><span style="font-size: 15px;vertical-align: top;margin-left: 5px;color: #ffffff">赞</span></a>
+                                        <a href="#" onclick="comment_set(this)" style="margin-left: 10px"><img src="imgs/comment.png" alt="" style="width: 10%;margin: 12px 0;"/><span style="font-size: 15px;vertical-align: 14px;margin-left: 5px;color:#ffffff;">评论</span></a>
+                                    </div>
+                                </div>
+                            <div class="ov commentw">
+                                <i class="arrow-up"></i>
+
+                                <div class="comment ov">
+                                    <img src="images/heart.png" width="12" height="11"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ov pb16 all_box pt15">
+                    <div class="all_m ov">
+                        <div class="fl all_left">
+                            <img src="images/tx8.jpg"/>
+                        </div>
+                        <div class="fl all_right">
+                            <h2>
+                                橘子味的志龙呐</h2>
+
+                            <p>由于种种原因，原本计划在8月16日举办的延吉场演唱会被取消，在此告知各位粉丝朋友。对于一直以来期待此次演
+                                出的粉丝朋友们表示衷心的抱歉，并希望在不久的将来能有机会与大家见面。其余中国地区的巡演场次会照常进行。</p>
+
+                            <div class="ov pt12">
+                                <div class="friend_img fl"><img data-preview-src="" data-preview-group="1" src="images/img14.jpg"/>
+                                </div>
+                                <div class="friend_img fl"><img data-preview-src="" data-preview-group="1" src="images/img15.jpg"/>
+                                </div>
+                            </div>
+                            <h3 class="friend_time">昨天</h3>
+
+                                <div class="ov pt8 icon_img" style="margin-top: -22px;">
+                                    <a class="popover_c" onclick="popover_set(this)" href="#"><img src="imgs/icon-c.png" alt="" style="float: right;width: 10%;margin: 10px 0px;"/></a>
+                                    <div class="popover_o" style="background-color:#2a2927;width: 180px;height: 40px;margin: 0 50px;border-radius: 3px;opacity: 0">
+                                        <a href="#" onclick="support_set(this)" style="float:left;width: 90px; margin-top: 10px;text-align: center"><img src="imgs/support.png" alt="" style="width: 20%;margin: 3px 0;"/><span style="font-size: 15px;vertical-align: top;margin-left: 5px;color: #ffffff">赞</span></a>
+                                        <a href="#" onclick="comment_set(this)" style="margin-left: 10px"><img src="imgs/comment.png" alt="" style="width: 10%;margin: 12px 0;"/><span style="font-size: 15px;vertical-align: 14px;margin-left: 5px;color:#ffffff;">评论</span></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ov pb16 all_box pt15">
+                    <div class="all_m ov">
+                        <div class="fl all_left">
+                            <img src="images/tx9.jpg"/>
+                        </div>
+                        <div class="fl all_right">
+                            <h2>
+                                星空七个梦</h2>
+
+                            <p>[BIGBANG - BIGBANG'S 2016 WELCOMING COLLECTION]
+                                包含BIGBANG成员们特别影像和图片的'BIGBANG’S 2016 WELCOMING COLLECTION DVD’
+                                将于2016年3月2日在韩国、日本同时发售。后期会进行第2轮更详细的公告。请多多关注！
+                                构成： DVD+相册＋月历＋特别商品(*构成有变动可能. 特别商品各国不同.） </p>
+
+                            <h3 class="friend_time">昨天</h3>
+
+                                <div class="ov pt8 icon_img" style="margin-top: -22px;">
+                                    <a class="popover_c" onclick="popover_set(this)" href="#"><img src="imgs/icon-c.png" alt="" style="float: right;width: 10%;margin: 10px 0px;"/></a>
+                                    <div class="popover_o" style="background-color:#2a2927;width: 180px;height: 40px;margin: 0 50px;border-radius: 3px;opacity: 0">
+                                        <a href="#" onclick="support_set(this)" style="float:left;width: 90px; margin-top: 10px;text-align: center"><img src="imgs/support.png" alt="" style="width: 20%;margin: 3px 0;"/><span style="font-size: 15px;vertical-align: top;margin-left: 5px;color: #ffffff">赞</span></a>
+                                        <a href="#" onclick="comment_set(this)" style="margin-left: 10px"><img src="imgs/comment.png" alt="" style="width: 10%;margin: 12px 0;"/><span style="font-size: 15px;vertical-align: 14px;margin-left: 5px;color:#ffffff;">评论</span></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ov pb16 all_box pt15">
+                    <div class="all_m ov">
+                        <div class="fl all_left">
+                            <img src="images/tx6.jpg"/>
+                        </div>
+                        <div class="fl all_right">
+                            <h2>贝贝哥的笑眼圈</h2>
+
+                            <p>#全民超神BigBang# VIP Surprise！快看“超神宣传小能手”@SEUNGRI胜利-YG 在MADE澳门演唱会上大秀中文뱅뱅뱅 (BANG BANG
+                                BANG)正式成为《全民超神》主题曲！[鼓掌][鼓掌]游戏背景音乐中更可以特别设置“主题曲模式”，玩BIGBANG英雄听BANGBANGBANG！@BIGBANG_ASIA
+                                L秒拍视频
+                                .
+                            </p>
+
+                            <div class="ov pt12">
+                                <div class="friend_img fl"><img data-preview-src="" data-preview-group="1" src="images/img16.jpg"/>
+                                </div>
+
+                                <div class="friend_img fl"><img data-preview-src="" data-preview-group="1" src="images/img17.jpg"/>
+                                </div>
+                            </div>
+                            <h3 class="friend_time">1小时前</h3>
+
+                                <div class="ov pt8 icon_img" style="margin-top: -22px;">
+                                    <a class="popover_c" onclick="popover_set(this)" href="#"><img src="imgs/icon-c.png" alt="" style="float: right;width: 10%;margin: 10px 0px;"/></a>
+                                    <div class="popover_o" style="background-color:#2a2927;width: 180px;height: 40px;margin: 0 50px;border-radius: 3px;opacity: 0">
+                                        <a href="#" onclick="support_set(this)" style="float:left;width: 90px; margin-top: 10px;text-align: center"><img src="imgs/support.png" alt="" style="width: 20%;margin: 3px 0;"/><span style="font-size: 15px;vertical-align: top;margin-left: 5px;color: #ffffff">赞</span></a>
+                                        <a href="#" onclick="comment_set(this)" style="margin-left: 10px"><img src="imgs/comment.png" alt="" style="width: 10%;margin: 12px 0;"/><span style="font-size: 15px;vertical-align: 14px;margin-left: 5px;color:#ffffff;">评论</span></a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pullUp">
+            <span class="pullUpLabel">加载中...</span>
+        </div>
+    </div>
+</div>
+
+
+
+<footer style="display: none;">
+    <div class="footer-left">
+        <textarea id="msg-text" type="text" class="input-text" autofocus></textarea>
+    </div>
+    <div class="footer-right">
+        <button onclick="comment_send()">发送</button>
+    </div>
+</footer>
+</body>
+<script type="text/javascript" src="js/mui.min.js"></script>
+<script type="text/javascript" src="js/mui.previewimage.js"></script>
+<script type="text/javascript" src="js/mui.zoom.js"></script>
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/jquery-latest.js"></script>
+<script type="text/javascript" src="js/friend.js"></script>
+<script type="text/javascript" src="js/pull-down.js"></script>
+<script>
+    function popover_set(forThis){
+        t = forThis.nextElementSibling;
+        q = $(forThis).next();
+        if(t.style.opacity == '0'){
+            q.animate({opacity:1},500);
+        }else{
+            q.animate({opacity:0},500);
+        }
+    }
+    function support_set(forThis){
+        $(forThis).parent().animate({opacity:0},300);
+        $(forThis).parent().parent().append('<div class="ov commentw"> <i class="arrow-up"></i> ' +
+        '<div class="comment ov"> <img src="images/heart.png" width="12" height="11" style="vertical-align: 10px;"/> ' +
+        '<img src="images/tx.jpg" style="width: 42px;height: 42px;margin: 0 5px"/></div> </div>')
+    }
+    function comment_set(forThis){
+        document.getElementsByTagName('footer')[0].style.display = 'block';
+        $(forThis).parent().animate({opacity:0},300);
+    }
+    function  comment_send(){
+        document.getElementsByTagName('footer')[0].style.display = 'none';
+    }
+    function issue_on(){
+        window.location.href = 'release.html';
+    }
+    mui.previewImage();
+</script>
+</html>
