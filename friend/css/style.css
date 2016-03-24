@@ -45,7 +45,7 @@
 /*recommend*/
 
 .footer-set {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 50px;
     min-height: 50px;
