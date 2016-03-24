@@ -448,11 +448,11 @@
         '<img src="images/tx.jpg" style="width: 30px;height: 30px;margin: 0 5px"/></div> </div>')
     }
     function comment_set(forThis){
-        document.getElementsByTagName('footer')[0].style.display = 'block';
+        document.getElementsByClassName('footer-set')[0].style.display = 'block';
         $(forThis).parent().animate({opacity:0},300);
     }
     function  comment_send(){
-        document.getElementsByTagName('footer')[0].style.display = 'none';
+        document.getElementsByClassName('footer-set')[0].style.display = 'none';
     }
     function issue_on(){
         window.location.href = 'release.html';
