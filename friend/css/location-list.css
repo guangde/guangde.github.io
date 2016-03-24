@@ -98,6 +98,7 @@
 	}
 .mui-table-view-cell.mui-radio.mui-left, .mui-table-view-cell.mui-checkbox.mui-left{
 	padding-left:15px;
+    font-size:16px;
 	}
 .mui-table-view-cell{
 	padding: 17.5px 15px;
@@ -108,10 +109,10 @@
 .mui-table-view-cell:after{ background:#dadadc;}
 .mui-table-view:before{ background:#dadadc;}
 .mui-table-view-divider:before{ background:#dadadc;}
-.mui-indexed-list-group{ background:#f0eff5;}
+.mui-indexed-list-group{ background:#f0eff5; font-size:16px;}
 .mui-radio input[type='radio']:before{ content:normal;}
 .mui-radio input[type='radio']:checked:before{ content: '\e472';}
 .mui-radio input[type='radio']:checked:before, .mui-checkbox input[type='checkbox']:checked:before{ color:#1d74d1; font-size:40px;}
-.mui-pull-left{ line-height:44px; color:#fff; padding-left:3px;}
+.mui-pull-left{ line-height:44px; color:#fff; padding-left:3px; font-size:16px;}
 .mui-icon-back:before, .mui-icon-left-nav:before{ content:normal;}
 .mui-bar .mui-btn-link{ color:#1dbd29;}

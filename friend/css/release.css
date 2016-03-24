@@ -145,5 +145,5 @@ input, textarea, select{ font-size:16px;}
 	}
 .mui-bar .mui-btn-link{ color:#1dbd29;}
 .mui-bar .mui-btn-link:hover{ color:#1dbd29;}
-.mui-pull-left{ line-height:44px; color:#fff; padding-left:3px;}
+.mui-pull-left{ line-height:44px; color:#fff; padding-left:3px; font-size:16px;}
 .mui-icon-back:before, .mui-icon-left-nav:before{ content:normal;}
