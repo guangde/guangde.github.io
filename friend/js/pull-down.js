@@ -22,6 +22,8 @@ function loaded() {
 
     myScroll = new iScroll('wrapper', {
         useTransition: true,
+        hScrollbar:false,
+        vScrollbar:false,
         topOffset: pullDownOffset,
         onRefresh: function () {
             if (pullDownEl.className.match('loading')) {
